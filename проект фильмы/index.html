@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preload" href="src/fonts/Lexend/Lexend-Light.ttf" as="style">
+  <link rel="preload" href="src/fonts/Lexend/Lexend-Medium.ttf" as="style">
+  <link rel="preload" href="src/fonts/Lexend/Lexend-SemiBold.ttf" as="style">
+  <link rel="stylesheet" href="src/css/normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="src/lib/swiper.css">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="flex">
+        <a href="#">
+          <img src="src/img/header-logo.svg" alt="logo">
+        </a>
+
+        <nav class="header-nav flex">
+          <a class="header-nav__link" href="#">Movies</a>
+          <a class="header-nav__link" href="#">TV Shows</a>
+          <a class="header-nav__link" href="#">
+            Suggest me
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.61987 3.95331L13.6665 7.99997L9.61987 12.0466" stroke="#A8AEBF" stroke-width="1.5"
+                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M2.33325 8H13.5533" stroke="#A8AEBF" stroke-width="1.5" stroke-miterlimit="10"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="search">
+      <div class="container">
+        <h1 class="search-title">MaileHereko</h1>
+        <p class="search-subtitle">List of movies and TV Shows, I, <a class="search-link" target="_blank"
+            href="#">Pramod Poudel</a> have watched till date. <br> Explore
+          what I have watched and also feel free to make a suggestion.</p>
+
+        <form action="#" class="search-form">
+          <input type="search" class="search-input" placeholder="Search Movies or TV Shows">
+        </form>
+      </div>
+    </section>
+
+    <!-- Now Playing Section -->
+    <section class="now-playing">
+      <div class="container">
+        <h2>Now Playing</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- render slider elements  -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="movies-list">
+      <div class="container">
+        <div class="multi-button">
+          <button class="button active">Movies</button>
+          <button class="button">TV Shows</button>
+        </div>
+        <h2 class="movies-title">Movies</h2>
+        <div class="popular-movies">
+          <!-- render popular movies  -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="spinner"></div>
+
+
+  <script type="module" src="src/js/index.js" defer></script>
+</body>
+
+</html>
